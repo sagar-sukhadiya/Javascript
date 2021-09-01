@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        // var arry = [10,20,30,40,50];          first way to decrative arry
+        // document.write(arry);
+
+
+        // var arry = new Array();               second way to creating array
+        // arry[0] = "38";
+        // arry[1] = "patel";
+        // arry[2] = true;
+        // document.write(arry + "<br>") ;
+
+
+        // var arry = new Array();                  user have a get the value
+        // for (var g=0; g<3; g++)
+        // {
+        //     arry[g]=prompt("Enter a number");
+        // }
+        // for(var a=0 ; a<3;a++)
+        // {
+        //     document.write(arry[a] + "<br>");
+        // }
+
+        var arry = [
+            ["sagar",25,"Amreli"],
+            ["Raj",24,"Jira"],
+            ["dk",24,"Machiyala"],
+            ["parth",24,"Jamnagar"]
+        ];
+        //document.write(arry.length);
+        document.write("<table border='1px' coalspecing='1px'>");
+            
+            for(var i=0;i<4;i++)
+            {
+                document.write("<tr>");
+                for(var j=0;j<3;j++){
+                
+                document.write("<td>"+  arry[i][j] + "</td>");
+                }
+                document.write("</tr>");
+            }
+        
+            
+            document.write("</table>");
+        
+    </script>
+</body>
+</html>

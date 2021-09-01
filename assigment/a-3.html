@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map json object</title>
+</head>
+<body>
+    <script>
+        var data = {
+            "color" : ["orange","blue","yellow","maroon"],
+            "records" : [
+                {
+                    "name" : "sagar" ,"city":"Amreli"
+                },
+
+                {
+                    "name" : "parth" ,"city":"jamnagar"
+                },
+
+                {
+                    "name" : "darshak" ,"city":"Amreli"
+                }
+            ]
+        }
+        // for(key in data.color){
+        //     document.write(key);
+        //     document.write("<br>");
+        //     document.write("<br>");
+        // }
+        
+        // for(key of data.color[2]){
+        //     document.write(key);
+        // }
+
+        for(key in data.records){
+            document.write(key);
+            document.write("<br>");
+            document.write("<br>");
+        }
+        for(key of data.records){
+            document.write(key);
+            console.log(key);
+        }
+
+        
+    </script>
+</body>
+</html>

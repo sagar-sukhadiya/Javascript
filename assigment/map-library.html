@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map using Libarary</title>
+</head>
+<body>
+    <script>
+        const myMap = new Map();
+        const key1 = "mystr", key2 = {}, key3 = function(){};
+        
+        //setting value
+        myMap.set(key1 , "This is A string");
+        myMap.set(key2 , "This is Blank");
+        myMap.set(key3, "empty function");
+        console.log(myMap);
+
+        //getting value
+        let value1 = myMap.get(key1);
+        console.log(value1);
+        //console.log(myMap.size);
+
+        //Loop using for...of to get keys and values
+        for(let[key,value] of myMap)
+        {
+            console.log(key,value);
+        }
+
+        //get only keys
+       for(let key of myMap.keys())
+       {
+           console.log("key is :",key);
+       }
+       //get only value
+       for(let value of myMap.values())
+       {
+           console.log("values of = ",value );
+       }
+      // converting map to array
+      let myArray = Array.from(myMap);
+      console.log("map to array is  : ",myArray);
+
+      let myKeyArray = Array.from(myMap.keys());
+      console.log("map key to array is",myKeyArray);
+
+      let myValueArray = Array.from(myMap.values());
+      console.log("map key to array is",myValueArray);
+        
+    </script>
+</body>
+</html>

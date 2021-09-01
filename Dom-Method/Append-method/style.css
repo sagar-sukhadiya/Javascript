@@ -1,0 +1,12 @@
+h1{
+    display: flex;
+    justify-content: center;
+    color: teal;
+}
+#test{
+    border: 2px solid gray;
+    height: 40vh;
+    width: 80vh;
+    margin: auto;
+    background-color: honeydew;
+}
